@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    font-family: "メイリオ","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+    background-color:  #ffffe0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.title {
+    margin: 0 auto 3rem auto;
+    padding: 0 0;
+}
+
+.title .logo {
+    width: 40rem;
+    margin: 0 auto;
+}
+
+.reach{
+    overflow: hidden;
+    font-size: 30px;
+    text-align: center;
+    animation: blink 0.8s infinite alternate;
+    color: #c00000;
+}
+
+.reach span{
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 4.32s linear infinite;
+}
+
+.global-nav {
+    padding: 2rem 0;
+    background-color: #fffacd;
+}
+
+.global-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.global-nav ul li {
+    list-style: none;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+    margin: auto 8em;
+    color: #005000;
+}
+
+main{
+    width: 60%;
+    padding-top: 8rem;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+main h2{
+    font-size: 30px;
+    font-family: "Sawarabi Gothic";
+    font-weight: 500;
+}
+
+main p{
+    margin: 1rem;
+    font-size: 20px;
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    49% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes marquee {
+    0% {transform: translate(150%);}
+    50% {transform: translate(-150%);}
+   100% {transform: translate(150%);}
+}
